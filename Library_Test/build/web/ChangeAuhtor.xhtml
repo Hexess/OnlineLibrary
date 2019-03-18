@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <head>
+        <title>更改作者信息界面</title>
+
+    </head>
+    <link rel="stylesheet" href="CSS/newcss.css" type="text/css"/>
+    <h:body id="changeauthor">
+        <h:form>
+
+            <f:facet name="header">
+                <h1>修改用户信息</h1>
+            </f:facet>
+            <h:panelGrid columns="2"  cellspacing="16" style="margin: 100px auto;">
+                <h:inputText id="authorName" readonly="true"  p:placeholder="#{managerBean.author.authorName}" />
+                <br />
+                <br />
+                <br />
+                <h:inputText id="authorNationality" value="#{managerBean.author.authorNationality}" p:placeholder="请输入修改国籍" requiredMessage="修改信息不能为空" required="true"/>
+                <br />
+                <h:message for="authorNationality" style="color:red;" />
+                <br />
+                <h:inputText id="authorBirthDate" value="#{managerBean.author.birthDate}" p:placeholder="在此修改出生日期" requiredMessage="日期格式不正确"  required="true" />
+                <br />
+                <h:message for="authorBirthDate" style="color:red;" />
+                <br />
+                <h:inputText id="apresentativeBooks" value="#{managerBean.author.aepresentativeBooks}" p:placeholder="请输入修改后代表作品"  requiredMessage="代表作不能为空" required="true" />
+                <br />
+                <h:message for="apresentativeBooks" style="color:red;" />
+                <br />
+                <h:inputText id="aboutAuhtor" value="#{managerBean.author.aboutAuthor}" p:placeholder="请输入更改信息"  required="true" requiredMessage="信息不能为空" />
+                <br />
+                <h:message for="aboutAuhtor" style="color:red;" />
+                <br />
+                <h:commandButton value="提交修改" action="#{managerBean.changeAuthorInfo()}" />
+            </h:panelGrid>
+        </h:form>
+
+    </h:body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ <class name="com.library.pojo.Borrow" table="borrow">
+         <id name="id" type="integer">
+            <column  name="ID" />
+            <generator class="identity" />
+         </id>
+         <property name="readId" type="string">
+          <column name="ReadID" />
+         </property>
+         <property name="bookId" type="string">
+         <column name="BookID" />
+         </property>
+         <property name="borrowDate" type="string">
+         <column name="BorrowDate" />
+         </property>
+          <property name="returnDate" type="string">
+         <column name="ReturnDate" />
+         </property>
+
+    </class>
+  
+  
+
+</hibernate-mapping>

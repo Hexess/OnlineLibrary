@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.library.pojo.Books" table="books">
+        <id name="bookId" type="string">
+            <column  name="BookID" />
+        </id>
+         <property name="bookName" type="string">
+          <column name="BookName" />
+         </property>
+         <property name="writerName" type="string">
+          <column name="WriterName" />
+         </property>
+         <property name="publishDate" type="date">
+          <column name="PublishDate" />
+         </property>
+         <property name="press" type="string">
+          <column name="Press" />
+         </property>
+         <property name="country" type="string">
+          <column name="Country" />
+         </property>
+         <property name="category" type="string">
+          <column name="Category" />
+         </property>
+          <property name="pictureUrl" type="string">
+          <column name="PictureUrl" />
+         </property>
+         <property name="pictureUrl_Big" type="string">
+          <column name="PictureUrl_Big" />
+         </property>
+         <property name="bookDescription" type="string">
+          <column name="BookDescription" />
+         </property>
+          <property name="bookStaus" type="string">
+          <column name="BookStaus" />
+         </property>
+
+    </class>
+  
+
+</hibernate-mapping>

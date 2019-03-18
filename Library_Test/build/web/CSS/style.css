@@ -1,0 +1,119 @@
+.login{
+    margin: 10% 0;
+    background:url(../images/1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.loging{
+    margin: 15% 0;
+    background:url(../images/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.changepwd{
+     margin: 10% 0;
+    background:url(../images/9.jpg) no-repeat center center;
+    background-size: cover;
+}
+.borrow{
+    margin: 10% 0;
+    background:url(../images/7.jpg) no-repeat center center;
+    background-size: cover;
+}
+.register{
+      margin: 10% 0;
+    background:url(../images/7.jpg) no-repeat center center;
+    background-size: cover;
+}
+.page-title{
+    display: block;
+    margin:30px auto;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 5.44em;
+    margin-left: 140px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+}
+.title-two{
+    display: block;
+    font-family:"Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+    font-weight: normal;
+    font-size: 3.84em;
+    color: #fff;
+    margin-left: 850px;
+    text-align: center;
+    margin-bottom: 30px;
+    float: left;
+}
+
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #696969 ;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #696969 ;
+}
+
+form {
+    position: relative;
+    width: 305px;
+    margin: 0 auto;
+    margin-top: 170px;
+    text-align: center;
+}
+input[type="text"]{
+    margin-top: 10px;
+    width: 270px;
+    height: 42px;
+    padding: 0 15px;
+    background: #2d2d2d;
+    background: rgba(45,45,45,.15);
+    border-radius: 6px;
+    border: 1px solid #3d3d3d;
+    border: 1px solid rgba(255,255,255,.15);
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+input[type="password"]{
+    width: 270px;
+    height: 42px;
+    padding: 0 15px;
+    margin-top: 10px;
+    background: #2d2d2d;
+    background: rgba(45,45,45,.15);
+    border-radius: 6px;
+    border: 1px solid #3d3d3d; 
+    border: 1px solid rgba(255,255,255,.15);
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+	
+
+input[type="submit"]{
+    cursor: pointer;
+    width: 300px;
+    height: 44px;
+    margin-top: 10px;
+    background: #ef4300;
+    border-radius: 6px;
+    border: 1px solid #ff730e;
+    box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.25) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.upload{
+    
+    margin-top: 20px;
+  
+}

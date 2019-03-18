@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+          <link rel="stylesheet" href="CSS/bootstrap.css" />
+        <link rel="stylesheet" href="CSS/book.css" />
+    </h:head>
+    <h:body>
+          <h:form>
+    
+    
+
+            <div id="heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-content">
+                                <h2>KINDLE-U</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="title">图书信息</h2>
+            <img class="under" src="images/under-heading.png" alt="" />
+                                
+        <div id="product-post" style="background-image: url(images/bg2.png)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                          
+                        </div>
+                    </div>
+                    <div id="single-blog" class="page-section first-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="product-item col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-8">  
+                                                <div class="image">
+                                                    <div class="image-post">
+                                                        <img src="#{dataBean.books.pictureUrl_Big}" alt=""/>
+                                                        <div style="float:right;  width: 400px; height: 450px;">
+                                                            <h3>图书名称：#{dataBean.books.bookName}</h3>
+                                                            <h3>图书编号：#{dataBean.books.bookId}</h3>
+                                                            <h3>作者：#{dataBean.books.writerName}</h3>
+                                                            <h3>出版社：#{dataBean.books.press}</h3>
+                                                            <h3>出版日期：#{dataBean.books.publishDate}</h3>
+                                                            <h3>国家：#{dataBean.books.country}</h3>
+                                                            <h3>类型：#{dataBean.books.category}</h3>
+                                                            <h3>状态：#{dataBean.books.bookStaus}</h3>
+                                                            
+                                                       
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="product-title">
+                                                        <h3>简介</h3>
+                                                     
+                                                    </div>
+                                                    <p>#{dataBean.books.bookDescription}</p>
+                                                </div>
+                                            
+                                              <h2 class="title2">图书评论</h2>
+                                           <img class="under" src="images/under-heading.png" alt="" />
+                                           <div class="comments-title">
+                                                    <div class="comment-section">
+                                                        <h4>评论</h4>
+                                                    </div>
+                                                </div>
+                                           
+                                           <c:forEach items="#{dataBean.comMap}" var="comment" varStatus="idx">
+                                                <div class="all-comments">
+                                                    <div class="view-comments">
+                                                        <div class="comments">
+                                                            <div class="author-thumb">
+                                                                <img src="#{comment.portrait}" alt=""/>
+                                                            </div>
+                                                            <div class="comment-body">
+                                                                <h6>#{comment.readName}</h6>
+                                                                <span class="date">#{comment.commentDate}</span>
+                                                                <p>#{comment.caption}</p>
+                                                                <p>#{comment.content}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                           </c:forEach>
+                                           
+                                                 <h2 class="title2">添加评论</h2>
+                                           <img class="under" src="images/under-heading.png" alt="" />
+                                            <div class="leave-comment">
+                                                <div class="leave-one">
+                                                    <h4>添加评论</h4>
+                                                </div>
+                                            </div>
+                                            <div class="leave-form">
+                                             
+                                                    <div class="row">
+                                                      
+                                                    <div class="email col-md-4">
+                                                        <h:inputText    p:placeholder="标题" value="#{dataBean.comment.caption}" />
+                                                    </div>
+                                                 
+                                                       
+                                                    </div>
+                                                    <div class="row">        
+                                                        <div class="text col-md-12">
+                                                            <h:inputTextarea   p:placeholder="内容" value="#{dataBean.comment.content}" />
+                                                        </div>   
+                                                    </div>                              
+                                                   
+                                                <h:commandButton value="发送" class="searchbutton" action="#{dataBean.insertcomment()}"/>
+                                                    
+                                           
+                                              
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+
+    
+        </h:form>
+    </h:body>
+</html>
+

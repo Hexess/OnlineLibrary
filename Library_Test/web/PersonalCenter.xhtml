@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+       xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Facelet Title</title>
+          <link rel="stylesheet" href="CSS/personalCenter.css" type="text/css" />
+    </h:head>
+    <h:body class="person">
+            <h:form>
+       <header>
+    	<div class="row">
+            <div class="row">
+                <div class="grid_3">
+                    <div>
+                        <img border="3px; blue;" src="#{dataBean.reader.portrait}" alt="My Photo"/>
+                    </div>
+                </div>
+                <div class="grid_9">
+                    <div class="name-wrap">
+                        <h1>HELLO李白 <span>欢迎来到个人中心</span></h1>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </header>
+  
+   
+    <div id="tab-container" class='tab-container'>
+      
+        <div class="row">
+        	<div class="grid_12">
+            <div class='panel-container'>
+              	<div id="home" class="page">
+                    <h2><span>个人信息</span></h2>
+                    <div class="content-wrap">
+                    	<div class="row">
+                            <div class="grid_6">
+                                   <blockquote class="quote">
+                                        李白你好,欢迎来到你的个人中心，在这里你可以查看您的个人信息和借阅记录以及评论。阅读点亮生活，KINDLE U随时欢迎你的到来。
+                                    </blockquote>
+                                <div class="content-pad">
+                                 
+                                        <h4>用户ID：#{dataBean.reader.readId}</h4>
+                                        <h4>用户名称：#{dataBean.reader.readName}</h4>
+                                        <h4>用户地址：#{dataBean.reader.readAddress}</h4>
+                                        <h4>电话号码：#{dataBean.reader.readMobile}</h4>
+                                        <h4>账户余额：#{dataBean.reader.readBalance}</h4>
+                                </div>	
+                            </div>
+                        
+                        
+                        </div>
+                        <div class="clearfix">&nbsp;</div>
+                    </div>
+                </div>
+                
+                	<div id="home" class="page">
+                    <h2><span>借阅历史</span></h2>
+                    <div class="content-wrap">
+                    	<div class="row">
+                          
+                          <h:form>
+                              <c:forEach items="#{dataBean.borrowMap}" var="borrow">
+                                                <div class="grid_3">
+                                            <h4>用户ID：#{borrow.readId}</h4>
+                                            <h4>图书ID：#{borrow.bookId}</h4>
+                                            <h4>借阅日期：#{borrow.borrowDate}</h4>
+                                            <h:commandButton class="button" value="还书" action="#{dataBean.returnBook(borrow.id)}"/>
+                                            <hr></hr>
+                                            </div>
+                                         </c:forEach>
+                                        </h:form>
+                        </div>
+                        <div class="clearfix">&nbsp;</div>
+                    </div>
+                </div>
+              
+               
+             
+                 <div id="contact" class="page">
+                        <h2><span>我的评论</span></h2>
+                        <div class="content-wrap">
+                            <div class="row">
+                                <div class="grid_6">
+                                    <div class="content-padd">
+                                            <c:forEach items="#{dataBean.comMap2}" var="comment2">
+                                            <h4>图书名称：#{comment2.bookName}</h4>
+                                            <h4>评论标题：#{comment2.caption}</h4>
+                                            <h4>评论内容：#{comment2.content}</h4>
+                                            <h4>评论日期：#{comment2.commentDate}</h4>
+                                            <h:commandButton class="button" value="删除评论" action="#{dataBean.deleteComment(comment2.id)}"/>
+                                         
+                                             <hr></hr>
+                                             <h:inputText value="#{comment2.caption}" p:placeholder="请输入修改标题" /><br/><br/>
+                                             <h:inputTextarea class="aera" value="#{comment2.content}"  p:placeholder="请输入修改内容" /><br/>
+                                             <h:commandButton class="button" value="确定修改" action="#{dataBean.updateComment(comment2.id,comment2.caption,comment2.content)}"/>
+                                            <hr></hr>
+                                           
+                                          </c:forEach>
+                                    </div>	
+                                </div>
+                            
+                            </div>
+                            
+                        </div>      
+                    </div>
+             </div>
+    	</div>
+    </div>
+	</div>
+  
+            </h:form>
+    </h:body>
+</html>
+

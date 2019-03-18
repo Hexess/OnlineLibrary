@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel="stylesheet" href="CSS/style_main.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/menu.css" type="text/css" />
+    </h:head>
+    <h:body class="main">
+        <h:form>
+<div id="move-to-top" class="animate hiding"></div>
+<div class="container">
+    <div class="menu style-1">
+        <ul class="menu">    
+            <li><a href="#">主页</a></li>
+            <li><a href="#" class="arrow">图书类型</a>
+                <div class="mega-menu full-width">
+                       <div class="col-1">
+                        <h4><a href="#">推理</a></h4>
+                        <ol>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="在黑暗中等待"></h:outputText>
+                            <f:param name="name" value="在黑暗中等待"></f:param>
+                            </h:commandLink>  
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="濒死之绿"></h:outputText>
+                            <f:param name="name" value="濒死之绿"></f:param>
+                            </h:commandLink>  
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="解忧杂货店"></h:outputText>
+                            <f:param name="name" value="解忧杂货店"></f:param>
+                            </h:commandLink>
+                            </li>                        
+                            <li >
+                                <h:commandLink action="#{dataBean.menuBook()}">
+                                 <h:outputText value="无人生还"></h:outputText>
+                                 <f:param name="name" value="无人生还"></f:param>
+                                </h:commandLink>  
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-1">
+                        <h4><a href="#">历史</a></h4>
+                        <ol>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="明朝那些事儿（壹）"></h:outputText>
+                            <f:param name="name" value="明朝那些事儿（壹）"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="十二幅地图中的世界史"></h:outputText>
+                            <f:param name="name" value="十二幅地图中的世界史"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="鱼羊野史·第6卷"></h:outputText>
+                            <f:param name="name" value="鱼羊野史·第6卷"></f:param>
+                            </h:commandLink>
+                            </li>     
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="如丧"></h:outputText>
+                            <f:param name="name" value="如丧"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="哈佛极简中国史"></h:outputText>
+                            <f:param name="name" value="哈佛极简中国史"></f:param>
+                            </h:commandLink>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">美食</a></h4>
+                        <ol>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="京料理"></h:outputText>
+                            <f:param name="name" value="京料理"></f:param>
+                            </h:commandLink>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">文学</a></h4>
+                        <ol>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="漫长的中场休息"></h:outputText>
+                            <f:param name="name" value="漫长的中场休息"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="皮囊"></h:outputText>
+                            <f:param name="name" value="皮囊"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="茧"></h:outputText>
+                            <f:param name="name" value="茧"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="我是猫"></h:outputText>
+                            <f:param name="name" value="我是猫"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="霍乱时期的爱情"></h:outputText>
+                            <f:param name="name" value="霍乱时期的爱情"></f:param>
+                            </h:commandLink>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">科幻</a></h4>
+                        <ol>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="三体Ⅱ"></h:outputText>
+                            <f:param name="name" value="三体Ⅱ"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="三体"></h:outputText>
+                            <f:param name="name" value="三体"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="新日之书（全4册）"></h:outputText>
+                            <f:param name="name" value="新日之书（全4册）"></f:param>
+                            </h:commandLink>
+                            </li>
+                          
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">传记</a></h4>
+                        <ol>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="活着为了讲述"></h:outputText>
+                            <f:param name="name" value="活着为了讲述"></f:param>
+                            </h:commandLink>
+                            </li>
+                            <li>
+                            <h:commandLink action="#{dataBean.menuBook()}">
+                            <h:outputText value="史蒂夫·乔布斯传"></h:outputText>
+                            <f:param name="name" value="史蒂夫·乔布斯传"></f:param>
+                            </h:commandLink>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                 
+                </div>
+            </li>
+	     <li>
+                <h:commandLink action="#{dataBean.borrowInfo()}" value="个人中心">
+                </h:commandLink>
+            </li>
+
+	    <li><a href="PreciseSearch.xhtml">图书检索</a>
+            </li>
+	  
+            <li>
+            </li>
+            <li class="right"><a href="#"  class="arrow">#{dataBean.reader.readName}的账户</a>
+                <ul>
+                    <li><a href="ChangeMessage.xhtml" class="rss" >修改个人信息</a></li>
+                    <li><a href="ChangePassword.xhtml" class="twitter">修改密码</a></li>
+                    <li><a href="index.xhtml" class="facebook" >退出</a></li>
+                    <li><h:commandLink action="#{dataBean.deleteread()}" value="注销用户"></h:commandLink></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <div class="main_title"><h1>Kindle-U</h1></div>
+         <div class="panel"> 
+  <div class="wrap">
+      <h:inputText class="search" p:placeholder="请在此输入搜索内容" value="#{dataBean.searchword}"/>
+      
+      <h:commandButton value="搜索" class="searchbutton" action="#{dataBean.searchblur()}"/>
+  </div>
+</div>
+        </h:form>
+ </h:body>
+</html>
+
+ 

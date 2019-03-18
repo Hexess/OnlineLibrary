@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel="stylesheet" href="CSS/style_main.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/menu.css" type="text/css" />
+    </h:head>
+    <h:body class="blurSearch"  style="background-image: url(images/bg2.png)">
+        <h:form>
+            <div class="page-title-wrapper"><div class="page-title">
+		<div class="content-boxed">
+                    <h1 class="big">Search results for "#{dataBean.precisecontent}"</h1>
+					</div>
+	</div>
+</div>
+            <c:forEach items="#{dataBean.bookMap}" var="book">
+        <div id="searchcontainer">
+ 
+            <div id="content" >
+                <div id="profile"> 
+                 	<!-- About section -->
+                	<div class="about">
+                            <div class="photo-inner"><img src="#{book.pictureUrl}" height="186" width="153" /></div>
+                        <h1  class="searchh1">#{book.bookName}</h1>
+                        <ul class="personal-info">
+                            <li><label>图书编号：</label><span>#{book.bookId}</span></li>
+                            <li><label>图书名称</label><span>#{book.bookName}</span></li>
+                            <li><label>作者：</label><span>#{book.writerName}</span></li>
+                         
+                    </ul>
+                    </div>
+                    <!-- /About section -->
+                  
+                       <h3 class="searchh3">
+                       <h:commandLink action="#{dataBean.menuBook()}">
+                       <h:outputText value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;了解更多-->"></h:outputText>
+                       <f:param name="name" value="#{book.bookName}"></f:param>
+                       </h:commandLink>
+                       </h3>
+                </div>        
+
+        </div>
+
+</div>
+  </c:forEach>
+
+        </h:form>
+    </h:body>
+</html>
+

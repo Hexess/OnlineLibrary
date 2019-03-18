@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.library.pojo.Manager" table="manager">
+        <id name="managerID" type="string">
+            <column name="ManagerID" />
+        </id>
+        <property name="managerName" type="string">
+            <column name="ManagerName" />
+        </property>
+        <property name="managerPassword" type="string">
+            <column name="ManagerPassword" />
+        </property>
+        <property name="managerMobile" type="string">
+            <column name="ManagerMobile" />
+        </property>
+        <property name="managerPost" type="string">
+            <column name="ManagerPost" />
+        </property>
+
+    </class>
+</hibernate-mapping>

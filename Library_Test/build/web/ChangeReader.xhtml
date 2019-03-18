@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"     
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <head>
+        <title>修改读者信息界面</title>
+    </head>   
+     <link rel="stylesheet" href="CSS/newcss.css" type="text/css"/>
+    <h:body id="changereader">
+        <h:form>
+
+            <f:facet name="header">
+                <h1>修改用户信息</h1>
+            </f:facet>
+            <h:panelGrid columns="2"  cellspacing="20" style="margin: 100px auto;">
+                <h:inputText id="rereadid" readonly="true"  p:placeholder="#{managerBean.reader.readId}" />
+            <br />
+            <h:inputText id="username"  readonly="true"  p:placeholder="#{managerBean.reader.readName}" />
+            <br />
+            <h:inputText id="readaddress" value="#{managerBean.reader.readAddress}" p:placeholder="请输入修改地址" requiredMessage="地址不能为空" required="true"/>
+            <h:message for="readaddress" style="color:red;" />
+            
+            <h:inputText id="readmobile" value="#{managerBean.reader.readMobile}" p:placeholder="在此输入手机号" validatorMessage="手机格式不对">
+                <f:validateRegex pattern="1[3578][0-9]{9}" />
+            </h:inputText>
+            <h:message for="readmobile" style="color:red;" />
+            
+            <h:inputText id="readpassword" value="#{managerBean.reader.readPassword}" p:placeholder="请输入修改密码"  required="true" requiredMessage="密码不能为空"/>
+            <h:message for="readpassword" style="color:red;" />
+            
+            <h:commandButton value="提交修改" action="#{managerBean.changeReaderInfo()}" />
+            </h:panelGrid>
+        </h:form>
+
+    </h:body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" 
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>登录成功页面</title>
+    </h:head>
+    <link rel="stylesheet" href="CSS/newcss.css" type="text/css"/>
+    <h:body id="success_body">
+
+        <div id="list" >
+            <h:form>
+
+                <ul>
+                    <li><h:commandButton value="作者" action="AuthorInfo.xhtml" /></li>
+                    <li><h:commandButton value="读者" action="ReaderInfo.xhtml" /> </li>
+                    <li><h:commandButton value="评论" action="CommentInfo.xhtml" /> </li>
+                    <li><h:commandButton value="图书"  action="BookInfo.xhtml"/> </li>
+                </ul>
+            </h:form>
+
+
+        </div>
+
+        <div id="success_div">
+            <h1 style="font-size: 45px;">欢迎登录图书管理系统</h1>
+
+            <p>登陆者：#{managerBean.manager.managerID}</p>
+            <p>姓&nbsp;名：#{managerBean.manager.managerName}</p>
+            <p>手&nbsp;机：#{managerBean.manager.managerMobile}</p>
+            <p>职&nbsp;务：#{managerBean.manager.managerPost}</p>
+
+            <br/>
+
+            <h:form>
+
+                <h:commandButton value="退出登录"  style="background-color:#9999ff;width: 150px;"/>
+            </h:form>
+        </div>
+
+    </h:body>
+
+
+
+</html>
+

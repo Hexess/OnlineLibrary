@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <link rel="stylesheet" href="CSS/newcss.css" type="text/css"/>
+    <h:head>
+        <title>登录页面</title>
+    </h:head>
+    <h:body id="login">
+        <h:form>
+
+
+                <h1>管理员登录</h1>
+
+             <h:panelGrid columns="2"  cellspacing="20" style="margin: 100px auto;">
+            <h:outputLabel for="managerID" value="账&nbsp;号" class="text"   />
+            <br/>
+            <h:inputText id="managerID" value="#{managerBean.managerID}" />
+            <br/>
+            <h:outputLabel for="managerPassword" value="密&nbsp;码" class="text" />
+            <br/>
+            <h:inputSecret id="managerPassword" redisplay="true" value="#{managerBean.managerPassword}" />
+            <br/><br/>
+            <h:commandButton value="登录" action="#{managerBean.validate}" />
+             </h:panelGrid>
+
+        </h:form>
+
+    </h:body>
+</html>
+

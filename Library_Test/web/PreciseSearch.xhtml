@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:f="http://xmlns.jcp.org/jsf/core"
+       xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Facelet Title</title>
+         <link rel="stylesheet" href="CSS/style_main.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/menu.css" type="text/css" />
+    </h:head>
+    <h:body class="precise">
+ <h:form>
+         <div id="move-to-top" class="animate hiding"></div>
+<div class="container">
+    <div class="menu style-1">
+        <ul class="menu">    
+            <li><a href="#">主页</a></li>
+            <li><a href="#" 
+class="arrow">图书类型</a>
+                <div class="mega-menu full-width">
+                    <div class="col-1">
+                        <h4><a href="#">历史</a></h4>
+                        <ol>
+                            <li><a href="#">明朝那些事儿（壹）</a></li>
+                            <li><a href="#">十二幅地图中的世界史</a></li>
+                            <li><a href="#">鱼羊野史·第6卷</a></li>                        
+                            <li><a href="#">如丧</a></li>
+                            <li><a href="#">哈佛极简中国史</a></li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">美食</a></h4>
+                        <ol>
+                            <li><a href="#">京料理</a></li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">文学</a></h4>
+                        <ol>
+                            <li><a href="#">漫长的中场休息</a></li>
+                            <li><a href="#">皮囊</a></li>
+                            <li><a href="#">茧</a></li>
+                            <li><a href="#">我是猫</a></li>
+                            <li><a href="#">霍乱时期的爱情</a></li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">科幻</a></h4>
+                        <ol>
+                            <li><a href="#">三体Ⅱ</a></li>
+                            <li><a href="#">三体</a></li>
+                            <li><a href="#">新日之书（全4册）</a></li>
+                          
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">传记</a></h4>
+                        <ol>
+                            <li><a href="#">活着为了讲述</a></li>
+                            <li><a href="#">史蒂夫·乔布斯传</a></li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h4><a href="#">推理</a></h4>
+                        <ol>
+                            <li><a href="#">在黑暗中等待</a></li>
+                            <li><a href="#">濒死之绿</a></li>
+                            <li><a href="#">解忧杂货店</a></li>                        
+                            <li><a href="#">无人生还</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">个人中心</a></li>
+	    <li><a href="#">图书检索</a></li>
+	    <li><a href="#">图书评论</a></li>
+                
+    
+        </ul>
+    </div>
+</div>
+          <h2 class="precisetitle">新书速递</h2>
+          <img class="preciseunder" src="images/under-heading.png" alt="" />
+       <div class="con">
+		<div id="carousel">
+			<figure><img src="images/revolve1.jpg" alt=""/></figure>
+			<figure><img src="images/revolve2.jpg" alt=""/></figure>
+			<figure><img src="images/revolve3.jpg" alt=""/></figure>
+			<figure><img src="images/revolve4.jpg" alt=""/></figure>
+			<figure><img src="images/revolve5.jpg" alt=""/></figure>
+			<figure><img src="images/revolve6.jpg" alt=""/></figure>
+			<figure><img src="images/revolve7.jpg" alt=""/></figure>
+			<figure><img src="images/revolve8.jpg" alt=""/></figure>
+			<figure><img src="images/revolve9.jpg" alt=""/></figure>
+		</div>
+	</div>
+
+        <h2 class="precisetitle">精确检索</h2>
+        <img class="preciseunder" src="images/under-heading.png" alt="" />
+          
+        <div class="searchprecise" >
+            <h:selectOneMenu  class="preciseselect" value="#{dataBean.selected}" >
+                <f:selectItem itemLabel="图书名称" itemValue="1"/>
+                <f:selectItem itemLabel="作者" itemValue="2" />
+                <f:selectItem itemLabel="出版社" itemValue="3" />
+                <f:selectItem itemLabel="类型" itemValue="5" />
+                <f:selectItem itemLabel="国家" itemValue="4" />
+            </h:selectOneMenu>
+
+            <h:inputText  class="precisesearch" p:placeholder="请在此输入搜索内容" value="#{dataBean.precisecontent}"/>  
+            <h:commandButton value="搜索" class="precisebutton" action="#{dataBean.searchprecise()}" />
+        </div>
+
+        </h:form>
+    </h:body>
+</html>
+

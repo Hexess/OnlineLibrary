@@ -1,0 +1,404 @@
+
+.main{
+	background:url(../images/3.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% -50px;
+}
+.precise{
+    background:url(../images/8.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% -50px;
+}
+
+.main_title{
+    display: block;
+    margin-top: 80px;
+    margin:40px auto;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 4.34em;
+    color: #fff;
+    text-align: center;
+}
+
+.panel{
+  position: absolute;top:90px;bottom: 0;left: 0;right: 0;
+  width: 600px; 
+  height: 140px;
+  padding: 50px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.wrap{ 
+  position: relative;
+  margin-top: 40px;
+  overflow: hidden;
+  z-index: 0;  
+background: #fff;
+  
+}
+
+.search{
+  width: 100%;
+  height: 44px;
+  padding: 0 65px 0 10px;
+  font-size: 
+16px;
+  border:0;
+  box-shadow: inset 1px 1px 11px rgba(0,0,0,.3);  
+} 
+.precisesearch{
+     width: 300px;
+  height: 44px;
+  padding: 0 65px 0 10px;
+  font-size: 
+16px;
+  border:0;
+  box-shadow: inset 1px 1px 11px rgba(0,0,0,.3);  
+}
+.searchbutton{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+height: 35px;
+  cursor: pointer;
+}
+
+
+
+
+.clear{
+    margin-top: 5%;
+    margin-left: 14%;
+}
+#pricing-table .plan {
+	font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+	text-shadow: 0 1px rgba(255,255,255,.8);        
+	background: #fff;      
+	border: 1px solid #ddd;
+	color: #333;
+	padding: 20px;
+	width: 300px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
+        height: 400px;
+	float: left;
+	position: relative;
+}
+
+#pricing-table h3 {
+	font-size: 20px;
+	font-weight: normal;
+	padding: 20px;
+	margin: -20px -20px 50px -20px;
+	background-color: #eee;
+	background-image: linear-gradient(#fff, #eee);
+}
+#pricing-table h3 span {
+	display: block;
+	font: bold 25px/100px Georgia, Serif;
+	color: #777;
+	background: #fff;
+	border: 5px solid #fff;
+	height: 100px;
+	width: 100px;
+	margin: 10px auto -65px;
+	border-radius: 100px;
+	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+}
+
+#pricing-table ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+#pricing-table li {
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+/* --------------- */
+	
+#pricing-table .signup {
+	position: relative;
+	padding: 8px 20px;
+	margin: 20px 0 0 0;  
+	color: #fff;
+	font: bold 14px Arial, Helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;       
+	background-color: #72ce3f;
+	background-image: -moz-linear-gradient(#72ce3f, #62bc30);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#72ce3f), to(#62bc30));    
+	background-image: -webkit-linear-gradient(#72ce3f, #62bc30);
+	background-image: -o-linear-gradient(#72ce3f, #62bc30);
+	background-image: -ms-linear-gradient(#72ce3f, #62bc30);
+	background-image: linear-gradient(#72ce3f, #62bc30);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+}
+
+#pricing-table .signup:hover {
+	background-color: #62bc30;
+	background-image: linear-gradient(#62bc30, #72ce3f); 
+}
+.table{
+    margin: 30px auto;
+    width: 1000px;
+ color: #fff;
+  font-family:Georgia,"Times New Roman",Times,serif;
+text-align: center;
+}
+
+.searchprecise{
+    margin: 30px auto;
+    margin-left: 28%;
+}
+.preciseselect{
+  height: 44px;
+  padding: 0 65px 0 10px;
+  font-size: 16px;
+}
+.precisebutton{
+  height: 44px;
+  padding: 0 65px 0 10px;
+    font-size: 16px;
+}
+
+/*搜索结果*/
+	#searchcontainer {
+		margin:0 auto;
+		width:860px;
+		margin-bottom: 20px;
+		margin-top: 30px;
+                background:url(../images/bg6.png) ;
+		margin: 0px;
+		padding: 0px;
+		margin-left: 10%;
+		font-size: 12px;
+	}
+	#content {
+		
+		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba
+(0, 0, 0, 0.06) inset;
+	}
+	/*-------------------------------------------------------*/
+		/* Generic Classes */
+	/*-------------------------------------------------------*/
+	.hidden {
+		display: none;
+	}
+	.clear {
+		clear:both;
+	}
+	/*-------------------------------------------------------*/
+		/* Typography */
+	/*-------------------------------------------------------*/
+    .searchh1{font-size: 37px;
+    font-family: Montserrat, 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+    color:#424c50;
+    }
+	
+	 .searchh3{
+             font-size: 25px;
+    font-family: Montserrat, 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+         color:#424c50;
+         margin-top: 23%;
+         }
+	
+
+		#logo {
+		float:left;
+		overflow:hidden;
+		margin-left:10px;
+		display:none;
+	}
+	#logo h2 {
+		font-size:30px;
+		font-weight:900;
+		
+		line-height:40px;
+	}
+	#logo h4 {
+		color:#666;
+		line-height:20px;
+	}
+	
+    #profile {
+		 /* 
+For ie8 */      margin-top: 30px;
+                
+		background-position:center bottom, left top;
+		background-repeat:repeat-x;
+		overflow:hidden;
+			
+	}
+	/* About */
+	.about {
+		float:left;
+		margin-top:30px;
+		width:490px;
+		margin-left:20px;
+	}
+	.about .photo-inner {
+		float:left;
+		background:url(../images/photo-inner.png) no-repeat;
+		width:192px;
+		height:212px;
+		padding:12px 0 0 20px;
+	}
+	.about .photo-inner img {
+		background-color:#FFF;
+	}
+	
+	.about h3 {
+		margin-top:5px;
+		font-size:18px;
+		color:#FFF;
+		line-height:18px;
+	}
+	
+	/* Personal info */
+	.personal-info {
+		width:510px;
+		margin-top:10px;
+                padding:10px 0 0 20px;
+                height:120px;
+	}
+	.personal-info li {
+		font-size:14px;
+		margin-bottom:10px;
+		overflow: hidden;
+	}
+	.personal-info li label {
+		color:#a87f09;
+		background-color:#f4c024;
+		padding:4px 7px;
+		border-radius: 3px;
+	
+	}
+	.personal-info li span {
+		width:170px;
+		color:#a87f09;
+	}
+	
+	/*-------------------------------------------------------*/
+		/* Resume */
+	/*-------------------------------------------------------*/
+	#resume {
+		padding:10px;
+	}
+	.timeline-section {
+		width:280px;
+		padding-right:60px;
+	}
+	.skills-section {
+		width:280px;
+	}
+	.skills li h4 {
+		width:120px;
+	}
+	/*-------------------------------------------------------*/
+		/* Portfolio */
+	/*-------------------------------------------------------*/
+	#portfolio-list {
+		width:280px;
+	}
+	#portfolio-list li {
+		margin-left:40px;
+	}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{ color:inherit;}
+.page-title-wrapper {
+    min-height: 100px;
+     background:url(../images/small_2.jpg) no-repeat;
+}
+.page-title-wrapper {
+    display: table;
+    width: 100%;
+    min-height: 240px;
+    height: 240px;
+    padding-bottom: 20px;
+}
+.page-title {
+    position: relative;
+    z-index: 10;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.content-boxed {
+    margin: 0 auto;
+    padding: 0 3%;
+    max-width: 1200px;
+}
+.big {
+    padding: 10px 0;
+    padding-top: 0;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 1em;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: -1px;
+        font-size: 35px;
+        font-family: Montserrat, 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+}
+
+
+html, body, div, span, applet, object, iframe,
+ blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, textarea, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+.try{
+    width:318px;
+    margin-left: 130px;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.library.pojo.Author" table="author">
+        <id name="authorName" type="string">
+          <column name="AuthorName" />
+      </id>
+      <property name="authorNationality" type="string">
+          <column name="AuthorNationality" />
+      </property>
+      <property name="birthDate" type="string">
+          <column name="BirthDate " />
+      </property>
+      <property name="aepresentativeBooks" type="string">
+          <column name="AepresentativeBooks" />
+      </property>
+      <property name="authorPhoto" type="string">
+          <column name="AuthorPhoto" />
+      </property>
+       <property name="aboutAuthor" type="string">
+          <column name="AboutAuthor" />
+      </property>
+    </class>
+
+
+
+</hibernate-mapping>

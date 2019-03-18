@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.library.pojo.Reader" table="readers">
+        <id name="readId" type="string">
+           <column name="ReadID" />
+        </id>
+      <property name="readName" type="string">
+          <column name="ReadName" />
+      </property>
+      <property name="readAddress" type="string">
+          <column name="ReadAddress" />
+      </property>
+      <property name="readMobile" type="string">
+          <column name="ReadMobile" />
+      </property>
+      <property name="readBalance" type="integer">
+          <column name="ReadBalance" />
+      </property>
+       <property name="readPassword" type="string">
+          <column name="ReadPassword" />
+      </property>
+       <property name="portrait" type="string">
+          <column name="Portrait" />
+      </property>
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"      
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" 
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core" >
+    <h:head>
+             <link rel="stylesheet" href="CSS/newcss.css" type="text/css"/>
+        <title>评论界面</title>
+    </h:head>
+    <h:body id="comment_div">
+        
+        <div id="list" >
+            <h:form>
+                <ul>
+                    <li><h:commandButton value="作者" action="AuthorInfo.xhtml" /></li>
+                    <li><h:commandButton value="读者" action="ReaderInfo.xhtml" /> </li>
+                    <li><h:commandButton value="评论" action="CommentInfo.xhtml" /> </li>
+                    <li><h:commandButton value="图书" action="BookInfo.xhtml" /> </li>
+                </ul>
+            </h:form>
+        </div>
+        <div id="comment">
+            <h:dataTable id="datatable" value="#{managerBean.commetList}" var="comment" rules="rows" width="80%" style="text-align:center;margin:30px auto;">
+            <f:facet name="header">
+                <h1>评论信息</h1>
+                <h:form>
+                    <h:inputText id="readerID" value="#{managerBean.ID}" /> <br />
+                                  <h:commandButton value="删除"  style="width: 60px;height: 20px;" action="#{managerBean.deleteCommentInfo()}" />
+                    </h:form>
+            </f:facet>
+            <h:column>
+                <f:facet name="header">
+                    评论ID
+                </f:facet>
+                #{comment.id}
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    读者ID
+                </f:facet>
+                #{comment.readId}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    读者姓名
+                </f:facet>
+                #{comment.readName}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    图书编号
+                </f:facet>
+                #{comment.bookId}
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    图书名称
+                </f:facet>
+                #{comment.bookName}
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    图书评论
+                </f:facet>
+                #{comment.content}
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    评论时间
+                </f:facet>
+                #{comment.commentDate}
+            </h:column>
+
+
+
+        </h:dataTable>
+
+        </div>
+
+    </h:body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.library.pojo.BookCategory" table="BookCategory">
+        <id name="id" type="integer">
+            <column  name="ID" />
+        </id>
+        <property name="bookId" type="string">
+          <column name="BookID" />
+         </property>
+         <property name="categoryNo" type="integer">
+          <column name="categoryNo" />
+         </property>
+          <property name="categoryContent" type="string">
+          <column name="CategoryContent" />
+         </property>
+    </class>
+  
+
+</hibernate-mapping>
